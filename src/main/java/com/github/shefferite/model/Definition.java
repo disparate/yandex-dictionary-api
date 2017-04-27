@@ -22,6 +22,9 @@ public class Definition {
     @JsonProperty("gen")
     private String gender;
 
+    @JsonProperty("anm")
+    private String anm;
+
     @JsonProperty("tr")
     private List<Translation> translationList;
 
@@ -55,6 +58,14 @@ public class Definition {
 
     public void setGender(final String gender) {
         this.gender = gender;
+    }
+
+    public String getAnm() {
+        return anm;
+    }
+
+    public void setAnm(final String anm) {
+        this.anm = anm;
     }
 
     public List<Translation> getTranslationList() {
